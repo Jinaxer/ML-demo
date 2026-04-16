@@ -2,9 +2,9 @@ import pickle
 from sklearn.linear_model import LogisticRegression
 from preprocess import load_data, build_vectorizer
 
-DATA_PATH = "data/sample_data.csv"
-MODEL_PATH = "model/model.pkl"
-VEC_PATH = "model/vectorizer.pkl"
+DATA_PATH = r"data/sample_data.csv"
+MODEL_PATH = r"model/model.pkl"
+VEC_PATH = r"model/vectorizer.pkl"
 
 def train():
     X_text, y = load_data(DATA_PATH)
