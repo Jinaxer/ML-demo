@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.10-mlim
 
 WORKDIR /app
 
@@ -9,4 +9,4 @@ COPY . .
 
 RUN python src/train.py
 
-CMD ["uvicorn", "api.app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "api.app:app", "--host", "0.0.0.0", "--port", "8080"]
